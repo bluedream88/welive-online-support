@@ -1,0 +1,96 @@
+
+Ò». WeLive5 Introduction:
+    ---------------------------
+
+    WeLive5 is an enterprise-class online customer service system, it's main features as below:
+
+   1. Developed by PHP, based on WebSocket communication technology;
+   2. Five color styles, and also support mobile and PC terminals;
+   3. Intelligent robot online support;
+   4. Uppload images after authorizing by online support;
+   5. Automatic distribution of guests;
+   6. Guest can be Transfered to Other online support;
+
+       ......
+
+
+
+¶þ. WeLive5 Installation£º
+    ---------------------------
+
+  A. Requirements:
+  ---------------------
+
+    1. PHP5.0 or above.
+    2. MySQL5.0 or above.
+    3. PHP Socket module loaded. 
+
+        Re: Wamp Server is recommended to install on local computers, then it's very convenient to test and use WeLive5.
+ 
+
+
+  B. Installation:
+  ------------------
+
+    1. If the server turns on firewall, it needs to set up the firewall to open port 8430, and this port can not be occupied by other services.
+        (after WeLive is installed by default, Socket process will occupy port 8430)
+
+    
+    2. Set up the uploading mode of FTP tools to "Binary Mode"
+
+        Re FlashFXP£ºOptions -> Settings -> Open a dialog box -> Transmission -> Select "Binary Mode"
+
+ 
+    3. Unzip WeLive5 package, then upload it to a specified directory of your website server by FTP tools, such as: welive/
+
+
+    4. CHMOD the files or folders as below to 777 if your server is linux or unix:
+
+       ./welive/welive.js                      File                      CHMOD: 777
+
+       ./welive/avatar/                        Folder                   CHMOD: 777
+
+       ./welive/config/                         Folder                   CHMOD: 777
+
+       ./welive/config/settings.php        File                      CHMOD: 777
+
+       ./welive/config/1f5fb85bd9c392d03f659a9c15756777.txt           File         CHMOD: 777
+
+       ./welive/upload/img/                                                           Folder      CHMOD: 777
+
+
+    5. Create a new mysql database or get the connection parameters of an old mysql database.
+
+
+    6. View: http://www.xxxx.com/welive/install/, WeLive5 will guide the installation.
+
+       It is recommended to delete the Installation Folder(./welive/install/) after installed.
+
+
+    7. After default installation, the backend URL of admins or supports is: 
+
+	Web£º    http://www.xxxx.com/welive/admin/
+
+	Mobile£º http://www.xxxx.com/welive/app/
+
+        The default directories 'admin/' and 'app/' can be modified as you will.
+
+
+    8. Installation completed, but the administrator or support can not connect to the server when they enter operation page, 
+        this is generally related to the server configuration, you can visit our bbs for solution: http://www.weensoft.cn/bbs
+
+        Wamp Server is recommended to install on local computers, then it's very convenient to test and use WeLive5.
+
+
+
+  C. Re-Installation:
+  ---------------------
+
+    1. If you want re-install welive5, you need to delete ./welive/config/config.php
+
+
+
+
+Enjoy it!
+
+2019 weensoft.cn
